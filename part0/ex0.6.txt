@@ -1,0 +1,23 @@
+
+note over browser:
+New note from single page application
+end note
+
+note over browser:
+XHR (Ajax) POST request to add new note.
+(does not reload page)
+end note
+
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa\n{"content":"heh!","date":"2019-05-31T16:39:47.594Z"}
+
+note over server:
+Save note to collection on server.
+(could also save to database)
+end note
+
+server-->browser: /new_note_spa\n{"message":"note created"}
+
+note over browser:
+Render new item to list and reset new note
+when message returned from server
+end note

@@ -1,0 +1,33 @@
+
+note over browser:
+Open single page application
+from own web route
+end note
+
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/spa
+server-->browser: /spa
+
+note over browser:
+browser simultaneously fetches styles
+& javascript included by html code
+NOTE: same styles, different js
+end note
+
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.css
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/spa.js
+
+server-->browser: main.css
+server-->browser: spa.js
+
+note over browser:
+browser starts executing js-code (spa.js:31)
+that requests JSON data from server 
+end note
+
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/data.json
+server-->browser: [{ content: "HTML is easy", date: "2019-05-23T17:30:31.098Z" }, ...]
+
+note over browser:
+browser executes the event handler
+that renders notes to display
+end note
