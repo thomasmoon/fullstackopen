@@ -8,11 +8,11 @@ This guide was useful, for getting the line breaks for example:
 https://www.websequencediagrams.com/examples.html
 
 
-## Exercises 0.4
+## Exercise 0.4
 ![Ex 0.4](/part0/images/ex0.4.png)
 
-## Exercises 0.5
+## Exercise 0.5
 ![Ex 0.5](/part0/images/ex0.5.png)
 
-## Exercises 0.6
+## Exercise 0.6
 ![Ex 0.6](/part0/images/ex0.6.png)
